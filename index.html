@@ -1,589 +1,874 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>Atech Infotech</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-           	<div class="top_menu row m0">
-           		<div class="container">
-					<div class="float-left">
-						<ul class="list header_social">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li><a href="#"><i class="fa fa-behance"></i></a></li>
-						</ul>
-					</div>
-					<div class="float-right">
-						<a class="dn_btn" href="tel:+4400123654896">+440 012 3654 896</a>
-						<a class="dn_btn" href="mailto:support@colorlib.com">support@colorlib.com</a>
-					</div>
-           		</div>	
-           	</div>	
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="courses.html">Courses</a>
-										<li class="nav-item"><a class="nav-link" href="course-details.html">Course Details</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
-            <div class="banner_inner d-flex align-items-center">
-            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
-				<div class="container">
-					<div class="banner_content text-center">
-						<h3>We Ensure better education <br />for a better world</h3>
-						<p>In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble.</p>
-						<a class="main_btn" href="#">Get Started</a>
-					</div>
+<head>
+<title>A-Tech Infotech</title>
+<link rel="icon" href="images/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- font files -->
+<link href='//fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+<!-- /font files -->
+<!-- css files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/viewbox.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/hoverex-all.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/portfolio.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- /css files -->
+<!-- js files -->
+<script type="text/javascript" src="js/modernizr.custom.js"></script> 
+<!-- /js files -->
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+ 
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+.modaldialog
+{
+  text-align: center;
+position:fixed;
+font-family:Arial,Helvetica,sans-serif;
+top:0;
+right:0;
+bottom:0;
+left:0;
+background:transparent;
+z-index:99999;
+opacity:0;
+-webkit-transition:opacity 400ms ease-in;
+-moz-transition:opacity 400ms ease-in;
+transition:opacity 400ms ease-in;
+pointer-events:none;
+}
+
+.modaldialog:target
+{
+opacity:1;
+pointer-events:auto;
+}
+
+.modaldialog >div
+{
+width:300px;
+position:relative;
+margin:10% auto;
+padding: 5px 20px 13px 20px;
+border-radius:10px;
+border:2px solid #ffffff;
+  background: #222222;
+	font-family: 'Lato', sans-serif;
+}
+
+.mycon ul{
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.mycon h2 {
+	color: #AAAAAA;
+	font-weight: normal;
+}
+
+.mycon ul li{
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #111111;
+  background: #222222;
+
+}
+
+.mycon ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.mycon ul li label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.35em;
+  margin: 10px auto;
+  height: 30px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.mycon ul li:hover label{
+	color: #FFFFFF;
+}
+
+.mycon ul li .check{
+  display: block;
+  position: absolute;
+  border: 5px solid #AAAAAA;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  top: 10px;
+  left: 20px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+.mycon ul li:hover .check {
+  border: 5px solid #FFFFFF;
+}
+
+.mycon ul li .check::before {
+  display: block;
+  position: absolute;
+	content: '';
+  border-radius: 100%;
+  height: 10px;
+  width: 10px;
+  top: 5px;
+	left: 5px;
+  margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+.mycon input[type=radio]:checked ~ .check {
+  border: 5px solid #0DFF92;
+}
+
+.mycon input[type=radio]:checked ~ .check::before{
+  background: #0DFF92;
+}
+
+.mycon input[type=radio]:checked ~ label{
+  color: #0DFF92;
+}
+
+.close
+{
+background:#606061;
+color:#ffffff;
+line-height:25px;
+position:absolute;
+right:-12px;
+text-align:center;
+top:-10px;
+width:24px;
+text-decoration:none;
+font-weight:bold;
+-webkit-border-radius:12px;
+-moz-border-radius:12px;
+border-radius:12px;
+-mox-box-shadow:1px 1px 3px #000;
+-webkit-box-shadow:1px 1px 3px #000;
+box-shadow:1px 1px 3px #000;
+}
+.close:hover
+{
+background:#00d9ff;
+}
+
+.mybtn
+{
+margin-top:5px;
+color:crimson;
+display:inline-block;
+width:130px;
+height:40px;
+border:2px solid crimson;
+transition:color .5s;
+overflow:hidden;
+background:black;
+text-transform:uppercase;
+font-family:Helvetica;
+position:relative;
+}
+.mybtn:before
+{
+content:"";
+background:crimson;
+height:150px;
+width:200px;
+border-radius:50%;
+}
+
+.mybtn:hover
+{
+color:#fff;
+transition: draw3 .7s;
+}
+@keyframes draw3
+{
+100%{transform:scale(1.35);}
+}
+</style>
+</head>
+<body  onload="myFunction()" style="margin:0;">
+<div class="topbar-w3ls">
+	<a href="login.php#login" class="logo"><h1 style="vertical-align:middle"><img src="images/favicon.png" style="width:50px;height:50px;">A-Tech Infotech</h1><h4 style="color:yellow">We have Advanced Technologies.</h4></a>	
+	<div class="top-agileits">
+		<form class="search-container" action="#" method="post">
+			<input id="search-box" type="text" class="search-box" name="q" placeholder="Search Here"/>	
+			<label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>	
+			<input type="submit" id="search-submit" />
+		</form>	
+		<p><span class="glyphicon glyphicon-phone-alt"></span> +91 99245 41413, &nbsp;&nbsp;<span class="glyphicon glyphicon-phone-alt"></span> +91 99247 79051</p>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<!-- banner section -->
+<section class="banner">
+	<!-- navigation -->
+	<div class="navbar-wrapper">
+		<div class="container-fluid">
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.php#about" class="page-scroll">Home</a></li>
+						<li><a href="#team" class="page-scroll">Team</a></li>
+						<li><a href="#" >Our Aims</a></li> 
+ 						<li><a href="" class="page-scroll">Carrer Opportunities</a></li>
+ 						<li><a href="" class="page-scroll">Portfolio</a></li>
+						<li><a href="#contact" class="page-scroll">Contact</a></li>
+                                                
+						
+                                        </ul>
+                                     
+                                       
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- /navigation -->
+	<div id="slideshow-banner">
+		<ul>
+			<li class="slideshow-item"><img src="images/banner1.jpg" alt="" /></li>
+			<li class="slideshow-item"><img src="images/banner2.jpg" alt="" /></li>
+			<li class="slideshow-item"><img src="images/banner3.jpg" alt="" /></li>
+			<li class="slideshow-item"><img src="images/banner4.jpg" alt="" /></li>
+		</ul>
+	</div>
+</section>
+<!-- /banner section -->
+<div id="loader"></div>
+<div id="openModal" class="modaldialog">
+<div>
+<a href="#close" title="Close" class="close">X</a>
+  <div class="mycon">
+	
+	<h2>Select Course:</h2>
+<h2>&nbsp;</h2>
+<form name="optionform" method="post" action="index.php#openModal1">	
+  <ul>
+  <li>
+    <input type="radio" id="f-option" name="selector" value="Computer">
+    <label for="f-option">Computer</label>
+    
+    <div class="check"></div>
+  </li>
+  
+  <li>
+    <input type="radio" id="s-option" name="selector" value="Mechanical">
+    <label for="s-option">Mechanical</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  
+  <li>
+    <input type="radio" id="t-option" name="selector" value="Civil">
+    <label for="t-option">Civil</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  <li>
+    <input type="radio" id="e-option" name="selector" value="E.C">
+    <label for="e-option">E.C.</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  <li>
+    <input type="radio" id="u-option" name="selector" value="Electrical">
+    <label for="u-option">Electrical</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  
+<li>
+    <input type="submit"  name="selbtn" value="Ok" class="mybtn">
+
+</li>
+</ul>
+</form>
+</div>
+	</div>
+</div>
+
+<div id="openModal1" class="modaldialog">
+<div>
+<a href="#close" title="Close" class="close">X</a>
+  <div class="mycon">
+	
+	<h2>Select Discipline:</h2>
+<h2>&nbsp;</h2>
+<form name="optionform" method="post" action="courses.php#testimonial">	
+  <ul>
+  <li>
+    <input type="radio" id="p-option" name="selector1" value="Degree">
+    <label for="p-option">Degree</label>
+    
+    <div class="check"></div>
+  </li>
+  
+  <li>
+    <input type="radio" id="q-option" name="selector1" value="Diploma">
+    <label for="q-option">Diploma</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  <li>
+    <input type="radio" id="rr-option" name="selector1" value="Others">
+    <label for="rr-option">Others</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+      
+<li>
+    <input type="submit"  name="selbtn1" value="Ok" class="mybtn">
+
+</li>
+</ul>
+</form>
+</div>
+	</div>
+</div>
+
+<!-- about section -->
+<section class="about-w3ls" id="about">
+	<div class="container-fluid">
+		<div class="col-lg-6 col-md-6 col-sm-6 about-info1">
+			<img src="images/about-pic.png" class="mini img-responsive slideanim" alt="">
+			<h2 class="w3layouts w3 w3l agileinfo slideanim">About Us</h2>
+			<img src="images/about-img.jpg" class="max img-responsive slideanim" alt="">
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6 about-info2">
+			<p class="about-p1 w3layouts w3 w3l agileinfo slideanim" align="justify">Advanced Technologies (A-Tech) Education Centre is a Degree And Diploma Engineering Coaching Acadmey In Dahod, Gujarat, India with a focus on integrating technology with academics for engineering students in degree And diploma colleges. As of Now, This Academy is ranked #1 in the Dahod city of gujarat. This centre was founded in 2009 by Mr.Abbas Tukiwala and after that his brother was joined this centre and gave fully supports to build up this centre. Coaching Education For All Semester of All Branches such as Computer, Mechanical, Civil, Electrical, Electronics And Communication (EC) are conducting here. Specially Mathamatics for all semester includes Maths-1 to Maths-4 are conducting very efficiently and Regularly. Up to Current Year, there are approximately 1000 students get coaching from this centre and build their better future.  </p>
+			<p class="about-p1 wthree w3-agileits agileits-w3layouts agile w3-agile slideanim" align="justify">Apart From This, these centre offers many computer related courses such as Tally, Autocad, 3D Max, Micromedia Flash, D.T.P, Programming Languages and Long Term Courses such as DCA, PGDCA etc. This Centre developed Academy Related Projects in Computer, Electrical, E.C And Mechanical Engineering and provides final year Trainiing Programme For Studnets. This centre prepares and implements Disseartation related or research related topics during 2 years.This centre focuses on Computer and technology related study fields.</p>
+			<ul class="sides slideanim">
+				<li><p><span class="fa fa-fighter-jet" aria-hidden="true"></span> A-Tech Education, We Build Smiles.</p></li>
+				<li><p><span class="fa fa-fighter-jet" aria-hidden="true"></span> A-Tech Education, The Key To Success.</p></li>
+				<li><p><span class="fa fa-fighter-jet" aria-hidden="true"></span> A-Tech Education, The Perfection At Its Finest.</p></li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+<!-- /about section -->
+<!-- team section -->
+<section class="team-w3ls slideanim" id="team">
+	<div class="container">
+		<h3 class="slideanim">Our Staff Cum Founder</h3>
+		<p class="text-header wthree w3-agileits agileits-w3layouts agile w3-agile slideanim">The Best</p>
+		<div class="col-lg-4 col-md-4 col-sm-4 team-agile1">
+			<div class="team-info">
+				<img src="images/abbas.png" alt="" class="img-responsive slideanim">
+				<div class="team-details slideanim">
+					<h4 class="slideanim">Mr. Abbas F. Tukiwala</h4>
+					<p class="team-p1 slideanim">Staff Cum Founder (M.E. Computer)</p>
+					<ul class="social-icons1 slideanim">
+						<li><a href="https://m.facebook.com/abbas.tukiwala?ref=bookmarks"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://mobile.twitter.com/AbbasTukiwala"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 team-agile2">
+			<div class="team-info">
+				<img src="images/husain.png" alt="" class="img-responsive slideanim">
+				<div class="team-details slideanim">
+					<h4 class="slideanim">Mr. Husain F. Tukiwala</h4>
+					<p class="team-p1 slideanim">Staff Cum Founder (B.E. Mechanical)</p>
+					<ul class="social-icons1 slideanim">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</section>
+<!-- team section -->
+<!-- portfolio section -->
+<section class="portfolio-w3ls" id="portfolio">
+	<div class="container">
+		<h3 class="slideanim">Our Events</h3>
+		<p class="text-header slideanim">Click To View More</p>
+	</div>
+	 <div id="portfoliowrap" class="slideanim">
+        <div class="portfolio-centered">
+            <div class="recentitems portfolio">
+				<div class="portfolio-item graphic-design">
+					<div class="he-wrap tpl6">
+					<img src="images/port1.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                               	<a href="images/port1.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                            
+                <div class="portfolio-item web-design">
+                    <div class="he-wrap tpl6">
+					<img src="images/port2.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+								<a href="images/port2.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
         
-        <!--================Finance Area =================-->
-        <section class="finance_area">
-        	<div class="container">
-        		<div class="finance_inner row">
-        			<div class="col-lg-3 col-sm-6">
-        				<div class="finance_item">
-        					<div class="media">
-        						<div class="d-flex">
-        							<i class="lnr lnr-rocket"></i>
-        						</div>
-        						<div class="media-body">
-        							<h5>Science & <br />Engineering</h5>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-sm-6">
-        				<div class="finance_item">
-        					<div class="media">
-        						<div class="d-flex">
-        							<i class="lnr lnr-earth"></i>
-        						</div>
-        						<div class="media-body">
-        							<h5>Science & <br />Engineering</h5>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-sm-6">
-        				<div class="finance_item">
-        					<div class="media">
-        						<div class="d-flex">
-        							<i class="lnr lnr-smile"></i>
-        						</div>
-        						<div class="media-body">
-        							<h5>Science & <br />Engineering</h5>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-sm-6">
-        				<div class="finance_item">
-        					<div class="media">
-        						<div class="d-flex">
-        							<i class="lnr lnr-tag"></i>
-        						</div>
-        						<div class="media-body">
-        							<h5>Science & <br />Engineering</h5>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Finance Area =================-->
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="images/port3.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <a href="images/port3.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
         
-        <!--================Courses Area =================-->
-        <section class="courses_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Popular Free Courses</h2>
-        			<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station.</p>
-        		</div>
-        		<div class="row courses_inner">
-        			<div class="col-lg-9">
-						<div class="grid_inner">
-							<div class="grid_item wd55">
-								<div class="courses_item">
-									<img src="img/courses/course-1.jpg" alt="">
-									<div class="hover_text">
-										<a class="cat" href="#">Free</a>
-										<a href="#"><h4>Japanease Language Class</h4></a>
-										<ul class="list">
-											<li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-											<li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-											<li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="grid_item wd44">
-								<div class="courses_item">
-									<img src="img/courses/course-2.jpg" alt="">
-									<div class="hover_text">
-										<a class="cat" href="#">Free</a>
-										<a href="#"><h4>Japanease Language Class</h4></a>
-										<ul class="list">
-											<li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-											<li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-											<li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="grid_item wd44">
-								<div class="courses_item">
-									<img src="img/courses/course-4.jpg" alt="">
-									<div class="hover_text">
-										<a class="cat" href="#">Free</a>
-										<a href="#"><h4>Japanease Language Class</h4></a>
-										<ul class="list">
-											<li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-											<li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-											<li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="grid_item wd55">
-								<div class="courses_item">
-									<img src="img/courses/course-5.jpg" alt="">
-									<div class="hover_text">
-										<a class="cat" href="#">Free</a>
-										<a href="#"><h4>Japanease Language Class</h4></a>
-										<ul class="list">
-											<li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-											<li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-											<li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="images/port4.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                              	<a href="images/port4.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                <div class="portfolio-item books">
+                    <div class="he-wrap tpl6">
+					<img src="images/port5.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+								<a href="images/port5.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="images/port6.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                               	<a href="images/port6.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                    
+                <div class="portfolio-item books">
+                    <div class="he-wrap tpl6">
+					<img src="images/port7.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                               	<a href="images/port7.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                    
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="images/port8.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                               	<a href="images/port8.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                <div class="portfolio-item web-design">
+                    <div class="he-wrap tpl6">
+					<img src="images/port9.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                               	<a href="images/port9.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+    
+			<div class="portfolio-item books">
+                <div class="he-wrap tpl6">
+					<img src="images/port10.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                               	<a href="images/port10.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+    
+			<div class="portfolio-item books">
+                <div class="he-wrap tpl6">
+					<img src="images/port11.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                               	<a href="images/port11.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+    
+			<div class="portfolio-item books">
+                <div class="he-wrap tpl6">
+					<img src="images/port12.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                               	<a href="images/port12.jpg" class="dmbutton a2 thumbnail" data-animate="fadeInUp" title="A-Tech Education"><i class="fa fa-search"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+
+            </div><!-- portfolio -->
+        </div><!-- portfolio container -->
+	 </div><!--/Portfoliowrap -->
+</section>
+<!-- /gallery section -->
+<!-- Stats -->
+<section class="stats-agileits" id="stats">
+	<div class="container">
+		<h3 class="slideanim">Our Statistics</h3>
+		<p class="text-header slideanim">In Figures</p>	
+		
+                <div class="stats-grid stats-grid-1 slideanim">
+			<div class="numscroller" data-slno='1' data-min='0' data-max='9' data-delay='3' data-increment="1">85</div>
+			<h4>Completion Years</h4>
+		</div>
+		<div class="stats-grid stats-grid-2 slideanim">
+			<div class="numscroller" data-slno='1' data-min='0' data-max='12' data-delay='3' data-increment="1">95</div>
+			<h4>Staff</h4>
+		</div>
+		<div class="stats-grid stats-grid-3 slideanim">
+			<div class="numscroller" data-slno='1' data-min='0' data-max='50' data-delay='3' data-increment="1">80</div>
+			<h4>Our Projects</h4>
+		</div>
+		<div class="stats-grid stats-grid-4 slideanim">
+			<div class="numscroller" data-slno='1' data-min='0' data-max='100' data-delay='3' data-increment="1">90</div>
+			<h4>Viewers</h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+<!-- Stats -->
+<!-- testimonial section -->
+<!-- /testimonial section -->
+<section class="map slideanim">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.8527971819794!2d74.25024031454204!3d22.844934985043277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39611db9954e7b21%3A0xd11eb305ab3f81bc!2sA-Tech+Education+Center!5e0!3m2!1sen!2sin!4v1504031203092" style="border:0" allowfullscreen width="100%" height="300px"></iframe>
+
+</section>
+<!-- /Google Map -->
+<section class="contact-us slideanim" id="contact">
+	<h3 class="text-center slideanim">Contact Us</h3>
+	<p class="text-center slideanim">A-Tech Education Centre.</p>
+	<div class="container">		
+		<div class="row">
+			<div class="col-lg-5 col-md-5">
+				<div class="contact-info">
+					<h4 class="slideanim">Connect With Us :-</h4>
+					<p class="slideanim"><span>Mobile</span>+91 9924541413, +91 99247 79051</p>
+					<p class="slideanim"><span>Email</span><a href="mailto:atechcomputer.dhd@gmail.com">atechcomputer.dhd@gmail.com</a></p>
+					<p class="addr slideanim"><span>Address</span>Ground Floor, Bag-E-Mufaddal Safiyah, Nr. Kawasji Bunglow, Godi Road, Dahod-389151, Gujarat, India.</p>
+					<ul class="social-icons2">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-7 col-md-7">
+				<form action="#" method="post">
+					<div class="row">
+						<div class="col-sm-12 form-group slideanim">
+							<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
 						</div>
-        			</div>
-        			<div class="col-lg-3">
-        				<div class="course_item">
-							<img src="img/courses/course-3.jpg" alt="">
-							<div class="hover_text">
-								<a class="cat" href="#">Free</a>
-								<a href="#"><h4>Japanease Language Class</h4></a>
-								<ul class="list">
-									<li><a href="#"><i class="lnr lnr-users"></i> 355</a></li>
-									<li><a href="#"><i class="lnr lnr-bubble"></i> 35</a></li>
-									<li><a href="#"><i class="lnr lnr-user"></i> T. Robert</a></li>
-								</ul>
-							</div>
+					</div>
+					<div class="row email-bar">
+						<div class="col-sm-12 form-group slideanim">
+							<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
 						</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Courses Area =================-->
-        
-        <!--================Team Area =================-->
-        <section class="team_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Meet Our Faculty</h2>
-        			<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station.</p>
-        		</div>
-        		<div class="row team_inner">
-        			<div class="col-lg-3 col-sm-6">
-        				<div class="team_item">
-        					<div class="team_img">
-        						<img class="rounded-circle" src="img/team/team-1.jpg" alt="">
-        						<div class="hover">
-        							<a href="#"><i class="fa fa-facebook"></i></a>
-        							<a href="#"><i class="fa fa-twitter"></i></a>
-        							<a href="#"><i class="fa fa-linkedin"></i></a>
-        						</div>
-        					</div>
-        					<div class="team_name">
-        						<h4>Ethel Davis</h4>
-        						<p>Managing Director (Sales)</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-sm-6">
-        				<div class="team_item">
-        					<div class="team_img">
-        						<img class="rounded-circle" src="img/team/team-2.jpg" alt="">
-        						<div class="hover">
-        							<a href="#"><i class="fa fa-facebook"></i></a>
-        							<a href="#"><i class="fa fa-twitter"></i></a>
-        							<a href="#"><i class="fa fa-linkedin"></i></a>
-        						</div>
-        					</div>
-        					<div class="team_name">
-        						<h4>Ethel Davis</h4>
-        						<p>Managing Director (Sales)</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-sm-6">
-        				<div class="team_item">
-        					<div class="team_img">
-        						<img class="rounded-circle" src="img/team/team-3.jpg" alt="">
-        						<div class="hover">
-        							<a href="#"><i class="fa fa-facebook"></i></a>
-        							<a href="#"><i class="fa fa-twitter"></i></a>
-        							<a href="#"><i class="fa fa-linkedin"></i></a>
-        						</div>
-        					</div>
-        					<div class="team_name">
-        						<h4>Ethel Davis</h4>
-        						<p>Managing Director (Sales)</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-sm-6">
-        				<div class="team_item">
-        					<div class="team_img">
-        						<img class="rounded-circle" src="img/team/team-4.jpg" alt="">
-        						<div class="hover">
-        							<a href="#"><i class="fa fa-facebook"></i></a>
-        							<a href="#"><i class="fa fa-twitter"></i></a>
-        							<a href="#"><i class="fa fa-linkedin"></i></a>
-        						</div>
-        					</div>
-        					<div class="team_name">
-        						<h4>Ethel Davis</h4>
-        						<p>Managing Director (Sales)</p>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Team Area =================-->
-        
-        <!--================Testimonials Area =================-->
-        <section class="testimonials_area p_120">
-        	<div class="container">
-        		<div class="testi_slider owl-carousel">
-        			<div class="item">
-        				<div class="testi_item">
-							<img src="img/testimonials/testi-3.png" alt="">
-       						<h4>Fannie Rowe</h4>
-       						<ul class="list">
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       						</ul>
-       						<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.</p>
-        				</div>
-        			</div>
-        			<div class="item">
-        				<div class="testi_item">
-							<img src="img/testimonials/testi-3.png" alt="">
-       						<h4>Fannie Rowe</h4>
-       						<ul class="list">
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       						</ul>
-       						<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.</p>
-        				</div>
-        			</div>
-        			<div class="item">
-        				<div class="testi_item">
-							<img src="img/testimonials/testi-3.png" alt="">
-       						<h4>Fannie Rowe</h4>
-       						<ul class="list">
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       							<li><a href="#"><i class="fa fa-star"></i></a></li>
-       						</ul>
-       						<p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.</p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Testimonials Area =================-->
-        
-        <!--================Pagkages Area =================-->
-        <section class="packages_area p_120">
-        	<div class="container">
-        		<div class="row packages_inner">
-        			<div class="col-lg-4">
-        				<div class="packages_text">
-        					<h3>Choose <br />Course Packages</h3>
-        					<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="packages_item">
-        					<div class="pack_head">
-        						<i class="lnr lnr-graduation-hat"></i>
-        						<h3>Premium</h3>
-        						<p>For the individuals</p>
-        					</div>
-        					<div class="pack_body">
-        						<ul class="list">
-        							<li><a href="#">Secure Online Transfer</a></li>
-        							<li><a href="#">Unlimited Styles for interface</a></li>
-        							<li><a href="#">Reliable Customer Service</a></li>
-        						</ul>
-        					</div>
-        					<div class="pack_footer">
-        						<h4>£399.00</h4>
-        						<a class="main_btn" href="#">Join Now</a>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4">
-        				<div class="packages_item">
-        					<div class="pack_head">
-        						<i class="lnr lnr-diamond"></i>
-        						<h3>Exclusive</h3>
-        						<p>For the individuals</p>
-        					</div>
-        					<div class="pack_body">
-        						<ul class="list">
-        							<li><a href="#">Secure Online Transfer</a></li>
-        							<li><a href="#">Unlimited Styles for interface</a></li>
-        							<li><a href="#">Reliable Customer Service</a></li>
-        						</ul>
-        					</div>
-        					<div class="pack_footer">
-        						<h4>£399.00</h4>
-        						<a class="main_btn" href="#">Join Now</a>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Pagkages Area =================-->
-        
-        <!--================Latest Blog Area =================-->
-        <section class="latest_blog_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Latest Posts From Blog</h2>
-        			<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station.</p>
-        		</div>
-        		<div class="row latest_blog_inner">
-        			<div class="col-lg-3 col-md-6">
-        				<div class="l_blog_item">
-        					<img class="img-fluid" src="img/latest-blog/l-blog-1.jpg" alt="">
-        					<a class="date" href="#">25 October, 2018  |  By Mark Wiens</a>
-        					<a href="single-blog.html"><h4>Addiction When Gambling Becomes A Problem</h4></a>
-        					<p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6">
-        				<div class="l_blog_item">
-        					<img class="img-fluid" src="img/latest-blog/l-blog-2.jpg" alt="">
-        					<a class="date" href="#">25 October, 2018  |  By Mark Wiens</a>
-        					<a href="single-blog.html"><h4>Addiction When Gambling Becomes A Problem</h4></a>
-        					<p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6">
-        				<div class="l_blog_item">
-        					<img class="img-fluid" src="img/latest-blog/l-blog-3.jpg" alt="">
-        					<a class="date" href="#">25 October, 2018  |  By Mark Wiens</a>
-        					<a href="single-blog.html"><h4>Addiction When Gambling Becomes A Problem</h4></a>
-        					<p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-3 col-md-6">
-        				<div class="l_blog_item">
-        					<img class="img-fluid" src="img/latest-blog/l-blog-4.jpg" alt="">
-        					<a class="date" href="#">25 October, 2018  |  By Mark Wiens</a>
-        					<a href="single-blog.html"><h4>Addiction When Gambling Becomes A Problem</h4></a>
-        					<p>Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery</p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Latest Blog Area =================-->
-        
-        <!--================Impress Area =================-->
-        <section class="impress_area p_120">
-        	<div class="container">
-        		<div class="impress_inner text-center">
-					<h2>Become an instructor</h2>
-					<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting up your own viewing station whether that is on the deck</p>
-					<a class="main_btn2" href="#">Apply for the post</a>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Impress Area =================-->
-        
-        <!--================ start footer Area  =================-->	
-        <footer class="footer-area p_120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2  col-md-6 col-sm-6">
-                        <div class="single-footer-widget tp_widgets">
-                           <h6 class="footer_title">Top Products</h6>
-                            <ul class="list">
-                            	<li><a href="#">Managed Website</a></li>
-                            	<li><a href="#">Manage Reputation</a></li>
-                            	<li><a href="#">Power Tools</a></li>
-                            	<li><a href="#">Marketing Service</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2  col-md-6 col-sm-6">
-                        <div class="single-footer-widget tp_widgets">
-                           <h6 class="footer_title">Quick Links</h6>
-                            <ul class="list">
-                            	<li><a href="#">Jobs</a></li>
-                            	<li><a href="#">Brand Assets</a></li>
-                            	<li><a href="#">Investor Relations</a></li>
-                            	<li><a href="#">Terms of Service</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2  col-md-6 col-sm-6">
-                        <div class="single-footer-widget tp_widgets">
-                           <h6 class="footer_title">Features</h6>
-                            <ul class="list">
-                            	<li><a href="#">Jobs</a></li>
-                            	<li><a href="#">Brand Assets</a></li>
-                            	<li><a href="#">Investor Relations</a></li>
-                            	<li><a href="#">Terms of Service</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2  col-md-6 col-sm-6">
-                        <div class="single-footer-widget tp_widgets">
-                           <h6 class="footer_title">Resources</h6>
-                            <ul class="list">
-                            	<li><a href="#">Guides</a></li>
-                            	<li><a href="#">Research</a></li>
-                            	<li><a href="#">Experts</a></li>
-                            	<li><a href="#">Agencies</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <aside class="f_widget news_widget">
-        					<div class="f_title">
-        						<h3 class="footer_title">Newsletter</h3>
-        					</div>
-        					<p>Stay updated with our latest trends</p>
-        					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
-                            </div>
-        				</aside>
-                    </div>
-                </div>
-                <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                    <p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                    <div class="col-lg-4 col-md-4 footer-social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-		<!--================ End footer Area  =================-->
-        
-        
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+					</div>
+					<div class="row email-bar">
+						<div class="col-sm-12 form-group slideanim">
+							<input class="form-control" id="name" name="mno" placeholder="Mobile No" type="text" required>
+						</div>
+					</div>
+			
+                                        <textarea class="form-control slideanim" id="comments" name="comments" style="background:transparent;color:white" placeholder="Comment" rows="5" required></textarea><br>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<button class="btn btn-outline1 btn-lg" type="submit" name="send">Send</button>
+						</div>
+					</div>
+				</form>			
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Contact -->
+<!-- Footer Section -->
+<section class="footer">
+	<div class="container">
+		<div class="copyright">
+			<p>&copy; 2017 <a href="login.php#login">A-Tech Education</a>. All Rights Reserved | Created By Mr. Abbas Tukiwala | Design by <a href="http://w3layouts.com/"> W3layouts </a></p>
+		</div>
+	</div>
+</section>
+<!-- /Footer Section -->
+<!-- back to top -->
+<a href="#0" class="cd-top">Top</a>
+<!-- /back to top -->
+<!-- js files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.slide.js"></script>
+<script type="text/javascript">
+	$('#slideshow-banner').slide({
+		cdTime : 5000,      
+	    controllerLeftButton : "images/left.png",    
+	    controllerRightButton : "images/right.png"   
+	});
+</script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/grayscale.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.viewbox.min.js"></script>
+<script>
+		$(function(){
+			
+			$('.thumbnail').viewbox();
+			$('.thumbnail-2').viewbox();
+			
+			(function(){
+				var vb = $('.popup-link').viewbox();
+				$('.popup-open-button').click(function(){
+					vb.trigger('viewbox.open');
+				});
+				$('.close-button').click(function(){
+					vb.trigger('viewbox.close');
+				});
+			})();
+			
+			(function(){
+				var vb = $('.popup-steps').viewbox({navButtons:false});
+				
+				$('.steps-button').click(function(){
+					vb.trigger('viewbox.open',[0]);
+				});
+				
+				$('.next-button').click(function(){
+					vb.trigger('viewbox.open',[1]);
+				});
+				$('.prev-button').click(function(){
+					vb.trigger('viewbox.open',[0]);
+				});
+				$('.ok-button').click(function(){
+					vb.trigger('viewbox.close');
+				});
+			})();
+			
+		});
+</script>
+<script src="js/retina-1.1.0.js"></script>
+<script src="js/jquery.hoverex.min.js"></script>
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+<script>
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
+<!-- /js files -->
+<div style="display:none;" id="myDiv">
+
+</div>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
 </html>
