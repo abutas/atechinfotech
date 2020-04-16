@@ -873,7 +873,7 @@ ul.social-icons2 li a i.fa.fa-linkedin:hover {
 ul.social-icons2 li a i.fa.fa-google-plus:hover { 
 	background-color:#8A0B00;
 }
-input#branch , input#name , input#email, textarea#comments, input#mnumber  {
+input#branch , input#name , input#email, textarea#comments, input#mno  {
 	color:#fff;
 	border-radius: 0px;
 	margin-bottom:10px;
@@ -881,7 +881,7 @@ input#branch , input#name , input#email, textarea#comments, input#mnumber  {
 	font-size:17px;
 	border:1px solid #fff
 }
-input#branch , input#name , input#email,input#mnumber {
+input#branch , input#name , input#email,input#mno {
 	height:55px;	
 }
 input::-webkit-input-placeholder {
